@@ -1,0 +1,94 @@
+body {
+    color: #000;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    -moz-user-select: none;
+    max-width: 540px;
+    height: 2000px;
+    margin: 0 auto;
+    background: #f4f4f4;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.search {
+    position: sticky;
+    top: 0;
+    left: 50%;
+    /* 固定的盒子要有宽度 */
+    /* transform: translateX(-50%); */
+    width: 100%;
+    max-width: 540px;
+    height: 50px;
+    padding: 8px 10px;
+    background-color: pink;
+}
+
+input:focus {
+    outline: 0;
+    border-width: none;
+}
+
+.search input {
+    margin: 0;
+    padding: 0;
+    padding-left: 40px;
+    border: 1px solid rgb(6, 128, 242);
+    border-radius: 16px;
+    width: 100%;
+    height: 32px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.search img {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.nav {
+    box-sizing: border-box;
+    padding: 8px 10px;
+    width: 100%;
+    background-color: aquamarine;
+}
+
+.nav .liebiao {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+
+.nav .liebiao li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    height: 58px;
+    background-color: antiquewhite;
+}
+
+.nav .liebiao li:nth-child(n) img,
+span {
+    margin-bottom: 4px;
+    width: 28px;
+    height: 28px;
+    font-size: 14px;
+}
+
+
+
+/* .nav .liebiao li:nth-child(1) span {
+    font-size: 14px;
+} */
